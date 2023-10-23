@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    color: #272D38;
+    user-select: none;
+}
+
+body {
+    height: 100svh;
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.navbar a {
+    font-size: 1,5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 35px;
+}
+
+li{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+li:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+.primer-section{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.primer-section h1 {
+    font-size: 2.5rem;
+}
+
+.primer-section p {
+    font-size: 1rem;
+}
+
+.primer-section button {
+    background-color: #8EADD5;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.primer-section button:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 26%;
+}
+
+.primer-section img {
+    width: 350px;
+    max-width: 350px;
+}
+
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.second-section ul {
+    display: flex;
+    gap: 50px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.third-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.card-container {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card {
+    width: 320px;
+    height: 330px;
+    gap: 10px;
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.card p {
+    font-size: 14px;
+    margin-top: 15px;
+    width: 270px;
+}
+
+.card img {
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 90%;
+    -webkit-border-radius: 90%;
+    -moz-border-radius: 90%;
+    -ms-border-radius: 90%;
+    -o-border-radius: 90%;
+}
+
+.footer-container {
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(207, 207, 207);
+    height: 35%;
+    padding-top: 30px;
+}
+
+
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer ul li {
+    cursor: pointer;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    body{
+        width: 136svw;
+    }
+
+    .text-container {
+        width: 30%;
+    }
+
+    .text-container h1 {
+        font-size: 19px;
+    }
+
+    .text-container p {
+        font-size: 10px;
+    }
+
+    .primer-section {
+        width: 100%;
+    }
+
+    .second-section {
+        width: 100%;
+    }
+
+    .second-section ul {
+        justify-self: center;
+        align-items: center;
+    }
+
+    .second-section img {
+        width: 60px;
+    }
+
+    .third-section {
+        width: 100%;
+    }
+
+    .primer-section img {
+        max-width: 200px;
+    }
+
+    .card-container {
+        align-items: center;
+        flex-direction: column;
+    }
+  }
