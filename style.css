@@ -195,7 +195,9 @@ li:hover {
     padding-top: 30px;
 }
 
-
+.nav-menu {
+    display: none;
+}
 
 footer ul {
     display: flex;
@@ -212,10 +214,17 @@ footer ul li {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     .navbar{
-        flex-direction: column;
         align-items: center;
-        gap: 15px;
-        height: 100px;
+        height: 60px;
+    }
+
+    .navbar > .list-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        width: 30px;
     }
 
     .logo {
